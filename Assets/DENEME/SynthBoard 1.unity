@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92ec5b5fb22bfbf4d9cbb8ecc448b60a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PortPath: COM6
+  PortPath: COM5
   Audio1: {fileID: 131201011}
   Audio2: {fileID: 734626698}
 --- !u!4 &127651166
@@ -237,7 +237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &131201013
 AudioSource:
   m_ObjectHideFlags: 0
@@ -248,7 +248,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0d8580bc73e1449589bf4f820db3859d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 209c46db38c731844839d239ebc0f046, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1307,7 +1307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &734626699
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1318,7 +1318,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9bae0fe8a6a64464e8a76ec9d239d5e1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7ec8f5e6f4021924fa89944f07b64f8b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

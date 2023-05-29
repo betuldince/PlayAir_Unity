@@ -14,6 +14,7 @@ public class BodySourceView2 : MonoBehaviour
     public BodySourceManager mBodySourceManager;
     public GameObject mJointObject;
     public float speedUp = 2f;
+    public float speedUpY = 2f;
     private Dictionary<ulong, GameObject> mBodies = new Dictionary<ulong, GameObject>();
     private List<JointType> _joints = new List<JointType> {
         JointType.HandLeft,
@@ -122,7 +123,7 @@ public class BodySourceView2 : MonoBehaviour
             Joint sourceJoint = body.Joints[JointType.HandLeft];
             targetPosition = GetVector3FromJoint(sourceJoint);
             targetPosition.x *= speedUp;
-            targetPosition.y *= speedUp;
+            targetPosition.y *= speedUpY;
             targetPosition.z = 1;
 
             Transform jointObject = bodyObject.transform.Find(JointType.HandLeft.ToString());
@@ -133,7 +134,7 @@ public class BodySourceView2 : MonoBehaviour
         Joint sourceJoint1 = body.Joints[JointType.HandRight];
         targetPosition1 = GetVector3FromJoint(sourceJoint1);
         targetPosition1.x *= speedUp;
-        targetPosition1.y *= speedUp;
+        targetPosition1.y *= speedUpY;
         targetPosition1.z = 1;
 
         Transform jointObject1 = bodyObject.transform.Find(JointType.HandRight.ToString());

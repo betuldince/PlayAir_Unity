@@ -9,16 +9,17 @@ using System.Collections.Generic;
      public int GridWidth;
 	 public int GridHeight;
 	 public int countUpObject;
-	public int tuneFactor;
+	public int tuneFactorX;
+	public int tuneFactorY;
 	public List<GameObject> tiles = new List<GameObject>();
 	 public List<float> note = new List<float> ();
 	
      void Awake() {
 		countUpObject = -1;
 		
-     	for(int y=0- tuneFactor; y<GridHeight- tuneFactor; y++)
+     	for(int y=0- tuneFactorY; y<GridHeight- tuneFactorY; y++)
 		{
-			for(int x=0- tuneFactor; x<GridWidth- tuneFactor; x++)
+			for(int x=0- tuneFactorX; x<GridWidth- tuneFactorX; x++)
 			{
 				
 				countUpObject++;

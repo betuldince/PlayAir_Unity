@@ -41,11 +41,11 @@ public class ArduinoManager : MonoBehaviour
         int firstSensor = (int)float.Parse(tokens[0]);
         int secondSensor = (int)float.Parse(tokens[1]);
         //Debug.Log(firstSensor+"-"+secondSensor);
-        if(firstSensor == 14 || firstSensor == 15)
+        if(firstSensor < 16)
         {
             Audio1.SetActive(true);
             Audio2.SetActive(false);
-        }else if(secondSensor == 14 || secondSensor == 15)
+        }else if(secondSensor < 14)
         {
             Audio2.SetActive(true);
             Audio1.SetActive(false);
